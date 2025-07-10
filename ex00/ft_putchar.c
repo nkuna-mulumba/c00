@@ -3,33 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nkuna <nkuna@student.42.fr>                #+#  +:+       +#+        */
+/*   By: jcongolo <jcongolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-07-10 07:25:17 by nkuna             #+#    #+#             */
-/*   Updated: 2025-07-10 07:25:17 by nkuna            ###   ########.fr       */
+/*   Created: 2025/07/10 07:25:17 by nkuna             #+#    #+#             */
+/*   Updated: 2025/07/10 17:53:27 by jcongolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
 
-void	ft_putchar(char *s)
+void	ft_putchar(char c)
 {
-	int		i;
-	char	c;
+	write(1, &c, 1);
+}
 
-	i = 0;
-	while (s[i])
+/**/
+	int	main(void)
 	{
-		c = s[i];
-		write(1, &c, 1);
-		i++;
+		ft_putchar('a');
+		write(1, "\n", 1);
+		return(0);
 	}
-}
 
-/*
-int	main(void)
-{
-	ft_putchar("Hello, world");
-	write(1, "\n", 1);
-	return(0);
-}
-*/

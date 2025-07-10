@@ -1,15 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   t_is_negative.c                                    :+:      :+:    :+:   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nkuna <nkuna@student.42.fr>                #+#  +:+       +#+        */
+/*   By: jcongolo <jcongolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-07-10 09:12:53 by nkuna             #+#    #+#             */
-/*   Updated: 2025-07-10 09:12:53 by nkuna            ###   ########.fr       */
+/*   Created: 2025/07/10 09:12:53 by nkuna             #+#    #+#             */
+/*   Updated: 2025/07/10 17:50:26 by jcongolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
+
 
 void	ft_is_negative(int n)
 {
@@ -22,6 +22,7 @@ void	ft_is_negative(int n)
 		write(1, "P", 1);
 	}
 }
+
 /*
 	int	ft_atoi(char *s)
 	{

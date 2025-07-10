@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nkuna <nkuna@student.42.fr>                #+#  +:+       +#+        */
+/*   By: jcongolo <jcongolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-07-10 07:35:13 by nkuna             #+#    #+#             */
-/*   Updated: 2025-07-10 07:35:13 by nkuna            ###   ########.fr       */
+/*   Created: 2025/07/10 07:35:13 by nkuna             #+#    #+#             */
+/*   Updated: 2025/07/10 16:05:11 by jcongolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
+
+// Esta função escreve um único caractere no terminal
 void	ft_print_alphabet(void)
 {
 	char	c;
