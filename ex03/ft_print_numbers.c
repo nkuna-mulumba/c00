@@ -9,6 +9,17 @@
 /*   Updated: 2025-07-10 08:59:48 by nkuna            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+    ft_print_numbers - Imprime números de '0' até '9' em sequência.
+    Comportamento:
+        - Inicializa com o caractere '0'
+        - Utiliza um loop até '9', imprimindo cada dígito como caractere
+        - Usa a função write para saída direta no terminal
+    Observações:
+        - Não adiciona espaços, separadores ou quebras de linha
+        - A saída será sempre: "0123456789"
+*/
 #include <unistd.h>
 
 void	ft_print_numbers(void)

@@ -10,6 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+    ft_is_negative - Verifica se um número é negativo e imprime resultado.
+    Parâmetros:
+        n → número inteiro a ser avaliado
+    Comportamento:
+        - Imprime 'N' se o número for negativo
+        - Imprime 'P' se o número for positivo ou zero
+        - Utiliza a função write para saída direta no terminal
+    Observações:
+        - Não imprime quebra de linha ou espaços adicionais
+        - A função trata '0' como valor positivo, imprimindo 'P'
+*/
+
+#include <unistd.h>
 
 void	ft_is_negative(int n)
 {

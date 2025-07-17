@@ -10,8 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+    ft_print_reverse_alphabet - Imprime o alfabeto em ordem reversa, de 'z' até 'a'.
+    Comportamento:
+        - Inicializa com o caractere 'z'
+        - Utiliza um loop decremental até 'a', imprimindo cada letra
+        - Usa a função write para saída direta no terminal
+    Observações:
+        - Não imprime espaços nem quebras de linha
+        - A saída será uma sequência contínua: "zyxwvutsrqponmlkjihgfedcba"
+*/
 #include <unistd.h>
-
 void	ft_print_reverse_alphabet(void)
 {
 	char	c;

@@ -10,12 +10,21 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
-// Esta função escreve um único caractere no terminal
+/*
+    ft_print_alphabet - Imprime alfabeto minúsculo de 'a' até 'z'.
+    Comportamento:
+        - Inicializa o caractere 'a'
+        - Utiliza um loop que vai de 'a' até 'z', imprimindo cada letra sequencialmente
+        - Usa a função write para imprimir diretamente no terminal
+    Observações:
+        - Não adiciona espaços ou quebras de linha
+        - O resultado é uma única sequência de 26 letras minúsculas: "abcdefghijklmnopqrstuvwxyz"
+*/
+#include <unistd.h>
 void	ft_print_alphabet(void)
 {
 	char	c;
-	
+
 	c = 'a';
 	while (c <= 'z')
 	{

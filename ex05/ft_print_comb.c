@@ -10,54 +10,54 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+    ft_print_comb - Imprime todas combinações possíveis de três dígitos distintos em ordem crescente.
+    Comportamento:
+        - Gera e imprime todos os conjuntos (a, b, c) onde:
+            '0' ≤ a < b < c ≤ '9'
+        - Cada combinação é impressa como três caracteres consecutivos (ex: "012", "047", "789")
+        - As combinações são separadas por vírgula e espaço, exceto após a última
+    Observações:
+        - Não imprime quebra de linha no final
+        - Garante que os dígitos sejam sempre únicos e em ordem crescente
+        - Total de combinações: 120 (combinatória de 10 elementos tomados de 3 em 3 sem repetição e com ordem)
+*/
 
 #include <unistd.h>
-// Esta função escreve um único caractere no terminal
-void    ft_putchar(char c)
+
+void	ft_print_comb(void)
 {
-    write(1, &c, 1);
+	char	a;
+	char	b;
+	char	c;
+
+	a = '0';
+	while (a <= '7')
+	{
+		b = a + 1;
+		while (b <= '8')
+		{
+			c = b + 1;
+			while (c <= '9')
+			{
+				write(1, &a, 1);
+				write(1, &b, 1);
+				write(1, &c, 1);
+				if (!(a == '7' && b == '8' && c == '9'))
+					write(1, ", ", 2);
+				c++;
+			}
+			b++;
+		}
+		a++;
+	}
 }
+
 /*
-    Esta função imprime todas combinações possíveis de 3 dígitos diferentes
-    em ordem crescente, de '0' a '9', separados por vírgula e espaço
-*/ 
-void    ft_print_comb(void)
-{
-    char    a;
-    char    b;
-    char    c;
-
-    a = '0';
-    while (a <= '7')// 'a' vai até '7' para garantir espaço para b e c
-    {
-        b = a + 1; // 'b' começa sempre depois de 'a'
-        while (b <= '8')// 'b' vai até '8' para garantir espaço para 'c'
-        {
-            c = b + 1;// 'c' começa sempre depois de 'b'
-            while (c <= '9')// 'c' vai até '9'
-            {
-                ft_putchar(a);// imprime o 1º dígito
-                ft_putchar(b); // imprime o 2º dígito
-                ft_putchar(c); // imprime o 3º dígito
-                
-                // Se não for a última combinação (789), imprime ", "
-                if (!(a == '7' && b == '8' && c == '9'))
-                {
-                    write(1, ", ", 2);
-                }
-                c++;
-            }
-            b++;
-        }
-        a++;
-    }
-}
-
-/* 
-    int main(void)
-    {
-        ft_print_comb();
-        write(1, "\n", 1);
-        return(0);
-    }
+	int main(void)
+	{
+		ft_print_comb();
+		write(1, "\n", 1);
+		return(0);
+	}
 */
